@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/static/css/newhome.css">
+  <link rel="stylesheet" href="/static/css/home.css">
+
+  <!-- boxicon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Hachi+Maru+Pop&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Victor+Mono:wght@100&display=swap"
+    rel="stylesheet">
+
+
+  <!-- dev tool images k liye -->
+
+  <title>Welcome</title>
+  <link rel="icon" href="/static/images/hacker.png">
+</head>
+
+<body>
+
+  <header>
+    <% values.forEach((value)=> { %>
+      <a href="#" class="logo">HEREiAM</a>
+      <ul class="navlist">
+        <% value.links.forEach((link)=>{ %>
+          <li><a href=<%=link.url%>><%= link.lable%></a></li>
+          <% }) %>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h5></h5>
+      <h4>
+        <%= value.tital %>
+      </h4>
+      <p>
+        Hi..I am Mithlesh Rawte, a passionate and creative individual eager to share my journey with you. This dynamic
+        website is a canvas of my experiences, accomplishments, and aspirations.I am inviting you to
+        explore, discover, and connect. Feel free to add a title and logo (PNG) that
+        resonates with our shared vision.</p>
+      <a id="pop" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalForm">Add</a>
+      <a href="chat" id="ctaa" class="ctaa"><i name="ii"></i>G-chat</a>
+    </div>
+
+    <div class="hero-img">
+      <img src=<%=value.myurl %>>
+    </div>
+    <% }); %>
+  </section>
+
+  <div class="icons">
+    <a href="saccount"><i class="ri-linkedin-box-line"></i></a>
+    <a href="saccount"><i class="ri-instagram-line"></i></a>
+    <a href="saccount"><i class="ri-github-fill"></i></a>
+    <a href="saccount"><i class="ri-code-box-line"></i></a>
+  </div>
+
+
+  <!-- neww body...hahahah -->
+
+  <div class="container">
+    <div class="row">
+      <div id="not1" class="col-lg-4">
+        <div class="card card-margin">
+          <div class="card-header no-border">
+            <h5 style="color: black;" class="card-title">NOTE</h5>
+          </div>
+          <div class="card-body pt-0">
+            <div class="widget-49">
+              <div class="widget-49-title-wrapper">
+                <div class="widget-49-date-primary">
+                  <span class="widget-49-date-day">G</span>
+                  <span class="widget-49-date-month">001</span>
+                </div>
+                <div class="widget-49-meeting-info">
+                  <span class="widget-49-pro-title">G-chat </span>
+                  <span class="widget-49-meeting-time">anytime </span>
+                </div>
+              </div>
+              <ol class="widget-49-meeting-points">
+                <li class="widget-49-meeting-item"><span>Our chat section is public</span></li>
+                <li class="widget-49-meeting-item"><span>Dont be abused</span></li>
+                <li class="widget-49-meeting-item"><span>bs mje kr lo mjanhi ayega wese</span></li>
+              </ol>
+              <div class="widget-49-meeting-action">
+                <a href="chat" class="btn btn-sm btn-flash-border-primary">chatLive</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="not2" class="col-lg-4">
+        <div class="card card-margin">
+          <div class="card-header no-border">
+            <h5 style="color: black;" style="color: black;" class="card-title">Gallery</h5>
+          </div>
+          <div class="card-body pt-0">
+            <div class="widget-49">
+              <div class="widget-49-title-wrapper">
+                <div class="widget-49-date-warning">
+                  <span class="widget-49-date-day">G</span>
+                  <span class="widget-49-date-month">apr</span>
+                </div>
+                <div class="widget-49-meeting-info">
+                  <span class="widget-49-pro-title">section for us</span>
+                  <span class="widget-49-meeting-time">24/7</span>
+                </div>
+              </div>
+              <ol class="widget-49-meeting-points">
+                <li class="widget-49-meeting-item"><span>add your insta... bs kr do</span></li>
+                <li class="widget-49-meeting-item"><span>add your art (poetry ,shayri)</span></li>
+                <li class="widget-49-meeting-item"><span>kuch time me yha college photos bhi apload kr diya
+                    jayega</span></li>
+              </ol>
+              <div class="widget-49-meeting-action">
+                <a href="gallery" class="btn btn-sm btn-flash-border-warning">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="not3" class="col-lg-4">
+        <div class="card card-margin">
+          <div class="card-header no-border">
+            <h5 style="color: black;" class="card-title">M-bit</h5>
+          </div>
+          <div class="card-body pt-0">
+            <div class="widget-49">
+              <div class="widget-49-title-wrapper">
+                <div class="widget-49-date-success">
+                  <span class="widget-49-date-day">M</span>
+                  <span class="widget-49-date-month">R</span>
+                </div>
+                <div class="widget-49-meeting-info">
+                  <span class="widget-49-pro-title">All about me</span>
+                  <span class="widget-49-meeting-time">online</span>
+                </div>
+              </div>
+              <ol class="widget-49-meeting-points">
+                <li class="widget-49-meeting-item"><span>feel free to travers</span></li>
+                <li class="widget-49-meeting-item"><span>connect with various plateform</span></li>
+                <li class="widget-49-meeting-item"><span>drop message</span></li>
+              </ol>
+              <div class="widget-49-meeting-action">
+                <a href="certificates" class="btn btn-sm btn-flash-border-success"> HEREiAM </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about me section -->
+  <section class="light">
+    <div class="container py-2">
+      <div class="h1 text-center text-dark" id="pageHeaderTitle">About my Self</div>
+
+      <article class="postcard light blue">
+        <a class="postcard__img_link">
+          <img class="postcard__img" src="/static/images/profile2.jpg" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h2 class="postcard__title blue"><a>Mithlesh Rawte</a></h2>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>26 Dec 2002
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt"> Hello! My name is Mithlesh Rawte, and I come from Balod district,
+            Chhattisgarh. Currently, I am pursuing a B.Tech degree in Computer Science from Government Engineering
+            College Bilaspur. I am passionate about technology and aspire to make a difference through innovative
+            solutions. Eager to explore and contribute to the world of computer science. Nice to meet you!
+
+            this site is a canvas of my experiences and showcase of my littlebit achivments</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Full stack developer</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>Android developer</li>
+            <li class="tag__item play blue">
+              <a href="saccount"><i class="fas fa-play mr-2"></i>connect with me</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light red">
+        <a class="postcard__img_link" >
+          <img class="postcard__img" src="/static/images/clg.png" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h2 class="postcard__title red"><a >Government Engineering College</a></h2>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>bilaspur Chhattisgarh
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Welcome to Government Engineering College, located in Bilaspur,
+            Chhattisgarh! Affiliated with Swami Vivekanand Technical University, we strive to provide quality education
+            in various fields. While our infrastructure may have room for improvement, we take immense pride in our
+            dedicated faculty members who are experts in their respective domains. </div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item play red">
+              <a href="http://gecbsp.ac.in/"><i class="fas fa-play mr-2"></i>Official site</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light blue">
+        <a class="postcard__img_link">
+          <img class="postcard__img" src="/static/images/time.png" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h2 class="postcard__title blue"><a>
+              Journey
+            </a></h2>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>26 Dec 2002
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt"> My educational journey has been a blend of learning experiences. I
+            completed half of my schooling at saraswati shishu mandir Kusumkasa and the other half at the government school
+            in Kusumkasa. Currently, I am pursuing a BTech degree at Bilaspur Government Engineering College. During
+            this journey, I developed my skills and became an intermediate developer with expertise in problem-solving.
+            I excel in solving DSA questions using C++. Presently, I am exploring the realm of cloud computing to
+            further enhance my knowledge and capabilities.</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>DSA c++</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>competitive programming</li>
+            <li class="tag__item play blue">
+              <a ><i class="fas fa-play mr-2"></i>cloude computing</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- end  about me section -->
+  <%- include('common/Worklist')%>
+
+    <!-- card start -->
+    <%- include('common/card')%>
+      <!-- card start end -->
+      <%- include('about')%>
+        <!-- form -->
+
+        <div id="popup-message" class="popup-message hidden">Data added successfully!</div>
+
+        <%- include('common/dropform')%>
+
+          <!-- new body end  hahahaha........ -->
+
+
+          <!-- popup form -->
+          <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="myform ">
+                    <h1 class="text-center">feel free to add title&icon</h1>
+                    <form id="myForm" action=" " method="post" enctype="multipart/form-data">
+                      <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label"> itle</label>
+                        <input type="text" name="titleName" class="form-control" id="exampleInputEmail1"
+                          aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Enter png Icon</label>
+                        <input type="file" id="photo" name="image" /><br /><br />
+                      </div>
+
+                      <button type="button" onclick="submitDetailsForm()" class="btn btn-light mt-3">ADD</button>
+                      <!-- <p>Not a member? <a href="#">Signup now</a></p> -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- popup form end hai re -->
+
+          <footer>
+            <%- include('common/footer')%>
+          </footer>
+
+          <!-- scrollview effect ke liye -->
+          <script src="https://unpkg.com/scrollreveal"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+          <script src="/static/js/script.js"></script>
+</body>
+
+</html>

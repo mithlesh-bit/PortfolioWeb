@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <div id="container-fluid" style="border-bottom: 1px solid black ;">
+        <div class="row come-in">
+            <h1 class="text-center" style="color: black; border: 1px solid black;  ">DO NOT READ</h1>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="panel panel-primary">
+                    <div id="galle" class="panel-heading">Gallery</div>
+                    <div id="galle1" class="panel-body">
+                        <p>The Gallery Page is a platform to connect with friends and showcase yourself. Share your pictures, links to
+                            social media such as linkedine insta twitter and more. It's an avenue for others to reach out and connect with
+                            you. Optionally, add your name
+                            or other details for a personal touch. Connect, inspire, and share moments with friends through this
+                            user-friendly page. Social media links make it easier for others to find and interact with you. Share your
+                            interests, passions, and stories, fostering meaningful connections. Whether you're sharing pictures or just your
+                            name, the Gallery Page offers an opportunity to express yourself and connect with others effortlessly.</p>
+                      
+                    </div>
+                </div>
+                <div class="panel panel-default fadeInDown">
+                    <div id="galle2" class="panel-body">
+                        <h3 style="color: black; border: 1px solid black; background-color: azure;">G-CHAT</h3>
+                        <p>"Hii"</p>
+
+                        <p>"ohh Hii.."</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="panel panel-info">
+                    <div id="certi" class="panel-heading">Certificates</div>
+                    <div id="certi1" class="panel-body">
+                        <p>The certificate page serves as a proud showcase, displaying all my hard-earned achievements and accomplishments.
+                            It is a visual testament to the dedication and expertise I have garnered throughout my journey. Each certificate
+                            represents a milestone in my personal and professional growth, reflecting my commitment to continuous learning and
+                            development. This compilation of accolades is a source of inspiration, motivating me to reach new heights and
+                            embrace future challenges with confidence.</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div id="certi2" class="panel-body">
+                        <p>add your insta... bs kr do </p>
+                        <p>add your linkedin profrtional side is important</p>
+                        <p>kuch time me yha college photos bhi apload kr diya jayega</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="panel panel-warning">
+                    <div id="social" class="panel-heading">SocialAccounts</div>
+                    <div id="social1" class="panel-body">
+                        <p>A social account page is a centralized platform where various social media accounts, such as LinkedIn, GitHub,
+                            Instagram, etc., are linked together. It enables easy connectivity and interaction with the individual who owns
+                            the page. Users can find and engage with the person on multiple social networks, fostering better communication
+                            and networking opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div id="social2" class="panel-body">
+                        
+                        <p>feel free to travers</p>
+
+                        <p>stblish connection with various plateforms yuuup i am free</p>
+
+                            <h5 class="page-h3" style="color: black; ">Grow your connection <a href="gallery">click here</a></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        p{
+            color: white;
+        }
+
+
+
+.panel-heading{
+    background-color:hsl(240, 80%, 84%);
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+.panel-body{
+    background: linear-gradient(245.59deg, #E57373 0%, #7986CB 50.53%, #3F51B5 75.52%);
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+        .come-in {
+            -webkit-transform: translateY(150px);
+            -ms-transform: translateY(150px);
+            transform: translateY(150px);
+            -webkit-animation: come-in 0.8s ease forwards;
+            animation: come-in 0.8s ease forwards;
+        }
+
+        .come-in:nth-child(odd) {
+            -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+        }
+
+        .already-visible {
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation: none;
+            animation: none;
+        }
+
+        @-webkit-keyframes come-in {
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes come-in {
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <script>
+        (function ($) {
+
+
+
+            $.fn.visible = function (partial) {
+
+                var $t = $(this),
+                    $w = $(window),
+                    viewTop = $w.scrollTop(),
+                    viewBottom = viewTop + $w.height(),
+                    _top = $t.offset().top,
+                    _bottom = _top + $t.height(),
+                    compareTop = partial === true ? _bottom : _top,
+                    compareBottom = partial === true ? _top : _bottom;
+
+                return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+            };
+
+        })(jQuery);
+
+        var win = $(window);
+
+        var allMods = $(".panel");
+
+        allMods.each(function (i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("already-visible");
+            }
+        });
+
+        win.scroll(function (event) {
+
+            allMods.each(function (i, el) {
+                var el = $(el);
+                if (el.visible(true)) {
+                    el.addClass("come-in");
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

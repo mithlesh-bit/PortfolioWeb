@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card2-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow the cards to wrap when the container gets smaller */
+  justify-content: center;
+}
+
+.card2 {
+  box-shadow: 1px black;
+  width: 220px; /* Set the width of each card */
+  height: 250px; /* Set the height of each card */
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.card2:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.card2 img {
+  width: 100%;
+  height: 200px; /* Set the height of the image inside the card */
+  object-fit: cover; /* Prevent image distortion */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card2-body {
+  padding: 10px;
+  text-align: center;
+}
+
+element.style {
+  color: black;
+  border: 1px solid black;
+}
+
+.card2-title {
+  color: black;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(176, 176, 239);
+
+}

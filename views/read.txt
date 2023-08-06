@@ -1,0 +1,194 @@
+<div class="fluid" id="navbar">
+    <div class="vi" id="view-section">
+      <h2>View</h2>
+      <h4>Welcome to Mithlesh Rawte's Dynamic Portfolio</h4>
+      <P>Welcome to my dynamic portfolio, where I invite you to embark on a journey through my world of creativity and
+        innovation. As an aspiring artist and passionate individual, this website serves as a canvas of my experiences,
+        accomplishments, and dreams.</P>
+    </div>
+
+    <div class="connect" id="connect-section">
+      <h2>Connect with Me</h2>
+      <p>Through this website, you can simply connect with me on a personal or professional level. I've made sure to
+        include links to my various social media accounts, where you can follow my journey, artistic creations, and
+        musings in real-time. Let's engage in meaningful conversations and share our passions!</p>
+      <a href="saccount">connect with me</a>
+    </div>
+    <div class="my" id="myself-section">
+      <h2>Myself</h2>
+      <p>
+
+      <p>Greetings! I'm Mithlesh Rawte, a passionate individual hailing from the serene town of Kusumkasa in Balod
+        district, Chhattisgarh, India.</p>
+
+      <p>Currently, I am pursuing my Bachelor's degree in Computer Science from the esteemed Government Engineering
+        College
+        Bilaspur, affiliated with Swami Vivekananda Technical University.</p>
+
+      <p>My journey into the world of technology and innovation began with a deep fascination for coding and
+        problem-solving. I find joy in exploring the endless possibilities offered by the digital landscape.
+      </p>
+
+      <p>On 26th December 2002, I was blessed with life, and since then, every day has been a gift of opportunities and
+        experiences.</p>
+
+      <p>Through this platform, I aim to share my knowledge, insights, and adventures as I continue to grow and learn in
+        this exciting field.</p>
+
+      <p>Join me on this thrilling ride, and together, let's shape a brighter and tech-savvy future!</p>
+
+      <p>Feel free to connect and explore with me.</p>
+
+      Best regards,
+      Mithlesh Rawte</p>
+    </div>
+    <div class="abouts" id="about-section">
+      <h2>About this site</h2>
+      <h3> the Dynamic World of Endless Possibilities!</h3>
+      <p>This website is designed with ultimate level of flexibility and control. With just 4-8 simple clicks,
+        I can effortlessly update and customize almost all aspects of this platform. From content and visuals to layout
+        and
+        design, everything is at my fingertips.</p>
+
+      <h3>Tools</h3>
+      <h4>
+        The website you are experiencing is a result of a powerful stack of technologies working harmoniously together.
+        Let's delve into the essential components that have brought this dynamic platform to life:</h4>
+    </div>
+    <!-- card  hai tools ke liye -->
+    <div class="tools" id="tools-section">
+      <h3>FrontEnd</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="/static/images/html.png" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">HTML</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="/static/images/css.png" class="card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">CSS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="/static/images/js.png" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="/static/images/jq.png" class="card-img-top" alt="Image 4">
+              <div class="card-body">
+                <h5 class="card-title">jQuery</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img src="/static/images/ejs.png" class="card-img-top" alt="Image 5">
+              <div class="card-body">
+                <h5 class="card-title">.ejs</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>BackEnd</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/static/images/node.png" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">nodeJs</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/static/images/ex.png" class="card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">ExpressJs</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/static/images/mongo.png" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">MongoDB</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Pages</h2>
+    <h3 class="page-h3">Home</h3>
+    <p>The Home Page serves as the main landing page for our website. It provides an introduction to our site's
+      purpose and offerings, as well as easy navigation to other pages on the website. Let's outline the components
+      and details that the Home Page contains</p>
+
+    <h3 class="page-h3">Gallery</h3>
+    <p>The Gallery Page is a platform to connect with friends and showcase yourself. Share your pictures, links to
+      social media such as linkedine insta twitter and more. It's an avenue for others to reach out and connect with
+      you. Optionally, add your name
+      or other details for a personal touch. Connect, inspire, and share moments with friends through this
+      user-friendly page. Social media links make it easier for others to find and interact with you. Share your
+      interests, passions, and stories, fostering meaningful connections. Whether you're sharing pictures or just your
+      name, the Gallery Page offers an opportunity to express yourself and connect with others effortlessly.</p>
+
+    <h3 class="page-h3">Certificates</h3>
+    <p>The certificate page serves as a proud showcase, displaying all my hard-earned achievements and accomplishments.
+      It is a visual testament to the dedication and expertise I have garnered throughout my journey. Each certificate
+      represents a milestone in my personal and professional growth, reflecting my commitment to continuous learning and
+      development. This compilation of accolades is a source of inspiration, motivating me to reach new heights and
+      embrace future challenges with confidence.</p>
+
+    <h3 class="page-h3">SocialAccounts</h3>
+    <p>A social account page is a centralized platform where various social media accounts, such as LinkedIn, GitHub,
+      Instagram, etc., are linked together. It enables easy connectivity and interaction with the individual who owns
+      the page. Users can find and engage with the person on multiple social networks, fostering better communication
+      and networking opportunities.</p>
+
+    <h3 class="page-h3">Grow your connection <a href="gallery">click here</a></h3>
+
+  </div>
+
+  <!-- popup form -->
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="myform ">
+            <h1 class="text-center">feel free to add title&icon</h1>
+            <form id="myForm" action=" " method="post" enctype="multipart/form-data">
+              <div class="mb-3 mt-4">
+                <label for="exampleInputEmail1" class="form-label">Email Title</label>
+                <input type="text" name="titleName" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Icon</label>
+                <input type="file" id="photo" name="image" /><br /><br />
+              </div>
+
+              <button type="submit" class="btn btn-light mt-3">ADD</button>
+              <!-- <p>Not a member? <a href="#">Signup now</a></p> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

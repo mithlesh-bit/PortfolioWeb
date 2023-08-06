@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/static/css/dropform.css">
+<h2 id="hhh">DROP MESSAGE for ME</h2>
+<form id="msgForm" class="cf" method="post">
+  <div class="half left cf">
+    <input type="text" id="input-name" placeholder="Name" name="sendername">
+    <input type="email" id="input-email" placeholder="Email address" name="senderemail">
+    <input type="text" id="input-subject" placeholder="Subject" name="sendersubject">
+  </div>
+  <div class="half right cf">
+    <textarea  type="text" id="input-message" placeholder="Message" name="sendermsg" ></textarea>
+  </div>  
+  
+  <input value="Drop Message" type="button"  onclick="submitMsgForm()" id="input-submit">
+</form>
+
+<script src="/static/js/script.js"></script>
