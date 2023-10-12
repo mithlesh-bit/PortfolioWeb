@@ -98,11 +98,11 @@ const main = async () => {
     // )
 
     // certificate schema...................
-    await certiSchema.create({
-        title:"GOOGLE BARD",
-        describe:" ",
-        url:"/static/images/bard.png"
-    }
+    // await certiSchema.create({
+    //     title:"GOOGLE BARD",
+    //     describe:" ",
+    //     url:"/static/images/bard.png"
+    // }
     // {
     //     title:"IIT BHU",
     //     describe:" hmm thanos just wanted to save earth, and we are nothing but an truble who realive the past",
