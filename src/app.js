@@ -3,7 +3,6 @@ const app = express();
 const ejs = require('ejs')
 const routes = require("./routes/routes");
 const mongoose = require('mongoose');
-const Details = require('./models/count')
 const count = require('./models/slideMode')
 const slideSchema = require('./models/slideMode')
 const certiSchema = require('./models/certiModel')
