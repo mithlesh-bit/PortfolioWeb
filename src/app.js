@@ -3,7 +3,8 @@ const app = express();
 const ejs = require('ejs')
 const routes = require("./routes/routes");
 const mongoose = require('mongoose');
-const Details = require('./models/model')
+const Details = require('./models/count')
+const count = require('./models/slideMode')
 const slideSchema = require('./models/slideMode')
 const certiSchema = require('./models/certiModel')
 const saccountSchema = require('./models/accountModel')
@@ -30,43 +31,19 @@ app.set('views', 'views')
 
 
 
-// chat ke liye try
-
-// const users = {};
-
-// io.on('connection', socket => {
-//     socket.on('new-user-join', name => {
-//         console.log("new user", name);
-//         users[socket.id] = name;
-//         socket.broadcast.emit('user-join',name);
-//     })
-
-//     socket.on('send', message => {
-//         socket.broadcast.emit('recive',{message:message, name: users[socket.id]});
-//     })
-
-//     socket.on('disconnect', message => {
-//         socket.broadcast.emit('left', users[socket.id]);
-//         delete users[socket.id];
-//     })
-// })
-
-
-
-
 // database connectivity 
 const main = async () => {
     await mongoose.connect("mongodb+srv://mithlesh:1234@cluster0.tnbojkw.mongodb.net/node");
-   
+
     // linkedine data
     // await linkSchema.create({
     //     "name": "mithlesh rawte",
     //     "l_id": "mithlesh-rawte-3297461b7",
     //     "l_url": `https://www.linkedin.com/in/mithlesh-rawte-3297461b7`
     // });
-   
-   
-   
+
+
+
     // imodel ka hai
     // await addid.create({
     //     userid:"mithlesh72_",
@@ -98,11 +75,11 @@ const main = async () => {
     // )
 
     // certificate schema...................
-    await certiSchema.create({
-        title:"GOOGLE BARD",
-        describe:" ",
-        url:"/static/images/bard.png"
-    }
+    // await certiSchema.create({
+    //     title:"GOOGLE BARD",
+    //     describe:" ",
+    //     url:"/static/images/bard.png"
+    // }
     // {
     //     title:"IIT BHU",
     //     describe:" hmm thanos just wanted to save earth, and we are nothing but an truble who realive the past",
@@ -129,7 +106,7 @@ const main = async () => {
     //         subhead:" hmm thanos just wanted to save earth, and we are nothing but an truble who realive the past",
     //         imageurl:"/static/images/slider1.jpg"
     //     }
-    )
+    // )
 
     // navebar Schema.............
     // Details.create({
@@ -170,7 +147,7 @@ io.on('connection', (socketIO) => {
 
     socketIO.on('new-user-join', (name) => {
         const msg = {
-            user: '', 
+            user: '',
             message: `${name} joined the chat`,
         };
         socketIO.broadcast.emit('message', msg);
